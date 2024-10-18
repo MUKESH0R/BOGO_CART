@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOGO CART</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="main_container">
+        <div class="main_header">
+            <div class="horizontal_line"><hr></div>
+            <b class="head_text">YAY It's BOGO</b>
+            <div class="horizontal_line"><hr></div>
+        </div>
+        <div class="box_container">
+            <div class="box" onclick="toggleSizeColor(this)">
+                <div class="default_container">
+                    <div class="first_container">
+                        <input type="radio" name="choice" value="option1" onchange="updateTotal()">
+                        <div>
+                            <big>1 Unit</big>
+                            <small class="offer">10% Off</small>
+                            <p class="span-item">Standard Price</p>
+                        </div>
+                    </div>
+                    <div class="second_container">
+                        <big>$10.00 USD</big>
+                        <small><strike>$24.00 USD</strike></small>
+                    </div>
+                </div>
+                <div class="size_color_container">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>size</td>
+                            <td>colour</td>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="box" onclick="toggleSizeColor(this)">
+                <div class="default_container">
+                    <div class="ribbon">
+                        <span>Most Popular</span>
+                    </div>
+                    <div class="first_container">
+                        <input type="radio" name="choice" value="option2" onchange="updateTotal()">
+                        <div>
+                            <big>2 Unit</big>
+                            <small class="offer">20% Off</small>
+                        </div>
+                    </div>
+                    <div class="second_container">
+                        <big>$18.00 USD</big>
+                        <small><strike>$24.00 USD</strike></small>
+                    </div>
+                </div>
+                <div class="size_color_container">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>size</td>
+                            <td>colour</td>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="box" onclick="toggleSizeColor(this)">
+                <div class="default_container">
+                    <div class="first_container">
+                        <input type="radio" name="choice" value="option1" onchange="updateTotal()">
+                        <div>
+                            <big>3 Unit</big>
+                            <small class="offer">30% Off</small>
+                        </div>
+                    </div>
+                    <div class="second_container">
+                        <big>$24.00 USD</big>
+                        <small><strike>$24.00 USD</strike></small>
+                    </div>
+                </div>
+                <div class="size_color_container">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>size</td>
+                            <td>colour</td>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>
+                                <select class="classic" name="size" id="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="classic" name="colour" id="colour">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Green">Green</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="addtocart_container">
+            <div class="delivery_total_container">
+                <p>Free Delivery</p>
+                <b>Total: $<span id="finalTotal">18.00 </span>&nbsp;USD</b>
+            </div>
+            <div class="addtocart">
+                <button><big>+</big> Add to Cart</button>
+                <div class="powredby">
+                    <i><small>@Powered by Pumper</small></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js" defer></script>
+ <!-- Link to the external JS file -->
+</body>
+</html>
